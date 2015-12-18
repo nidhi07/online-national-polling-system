@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2014 6:05:42 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.hp.pojo.Electiondetails" table="electiondetails" catalog="onps">
+        <id name="year" type="java.lang.Integer">
+            <column name="year" />
+            <generator class="identity" />
+        </id>
+        <property name="electiondate" type="date">
+            <column name="electiondate" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
