@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2014 6:05:42 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.hp.pojo.Users" table="users" catalog="onps">
+        <id name="userId" type="java.lang.Integer">
+            <column name="userID" />
+            <generator class="identity" />
+        </id>
+        <property name="voterIdentityNumber" type="java.lang.Integer">
+            <column name="voterIdentityNumber" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="120" not-null="true" />
+        </property>
+        <property name="isActive" type="java.lang.Boolean">
+            <column name="isActive" />
+        </property>
+        <property name="accountType" type="string">
+            <column name="accountType" length="5" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
